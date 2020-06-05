@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <div class="container" id="message-container">
+
+        <!-- <div class="row valign-wrapper" style="margin: 0; width: 100%;">
+            <div class="col">
+                <div class="pink darken-3 circle valign-wrapper center-align" style="width: 50px; height: 50px;">
+                    <div class="container"><p class="white-text">Name</p></div>
+                </div>
+            </div>
+            <div class="col s11">
+                <div class="card-panel pink lighten-3 left" style="width: fit-content; padding: 10px;">
+                    <span class="black-text">message</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row valign-wrapper right" style="margin: 0; width: 100%;">
+            <div class="col s11">
+                <div class="card-panel pink lighten-4 right" style="width: fit-content; padding: 10px;">
+                    <span class="black-text">message</span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="purple circle valign-wrapper center-align" style="width: 50px; height: 50px;">
+                    <div class="container"><span>Name</span></div>
+                </div>
+            </div>    
+        </div> -->
+
+
+        
+    </div>
+
+    <div style="position: fixed; bottom: 0; width:100%; background-color: rgba(255, 255, 255, 0.897);">
+        <div class="container">
+            <form class="col s8" id="send-container">
+              <div class="row">
+                <div class="input-field col s10">
+                  <input id="message-input" class="materialize-textarea" type="text"></input>
+                  <label for="message-input">Message</label>
+                </div>
+                <div class="col s2" style="padding: 12px;">
+                    <button class="btn waves-effect pink darken-4" type="submit" id="send-button">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+              </div>
+            </form>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
